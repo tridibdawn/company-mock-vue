@@ -1,4 +1,8 @@
-# demo-assessment
+# Vue Demo Application
+
+<img src="./assets/images/Screenshot 2024-11-28 at 9.42.04 PM.png" width="100%" />
+
+<img src="./assets/images/Screenshot 2024-11-28 at 9.42.29 PM.png" width="100%" />
 
 ## Project setup
 ```
