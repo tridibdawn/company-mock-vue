@@ -5,11 +5,16 @@
         <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-32 w-32"></div>
       </div>
       <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div v-for="company in companies" :key="company.uuid" class="bg-white p-6 rounded-lg shadow-md">
+        <div v-for="company in companies" :key="company.id" class="bg-white p-6 rounded-lg shadow-md">
           <h2 class="text-xl font-semibold text-center">{{ company.name }}</h2>
           <p class="text-gray-600 text-center">{{ company.email }}</p>
           <p class="text-gray-600 text-center">{{ company.phone }}</p>
           <p class="text-gray-600 text-center">{{ company.vat }}</p>
+          <router-link :to="`/company/${company.id}`">
+            <button class="bg-blue-500 text-white py-2 px-4 rounded w-full hover:bg-blue-600 transition duration-300">
+                View Details
+            </button>
+            </router-link>
         </div>
       </div>
     </div>

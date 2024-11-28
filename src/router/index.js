@@ -25,5 +25,12 @@ export default new Router({
       component: () =>
         import(/* webpackChunkName: "companies" */ "../views/Companies.vue"),
     },
+    {
+        path: '/company/:id', // Dynamic route for company details
+        name: 'CompanyDetails',
+        component: () =>
+            import(/* webpackChunkName: "company details" */ "../views/CompanyDetails.vue"),
+        props: true
+      }
   ],
 });
