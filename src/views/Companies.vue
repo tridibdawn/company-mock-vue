@@ -10,7 +10,7 @@
           <p class="text-gray-600 text-center">{{ company.email }}</p>
           <p class="text-gray-600 text-center">{{ company.phone }}</p>
           <p class="text-gray-600 text-center">{{ company.vat }}</p>
-          <router-link :to="`/company/${company.id}`">
+          <router-link :to="`/${company.id}`">
             <button class="bg-blue-500 text-white py-2 px-4 rounded w-full hover:bg-blue-600 transition duration-300">
                 View Details
             </button>
